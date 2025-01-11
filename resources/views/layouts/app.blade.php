@@ -15,13 +15,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-blue-100 dark:bg-gray-900 flex">
+    <div class="min-h-screen bg-green-100 dark:bg-gray-900 flex">
         <!-- Sidebar -->
         @include('layouts.sidebar')
         <!-- Main Content -->
         <div class="flex-1">
             <!-- Navbar -->
-            <nav x-data="{ open: false }" class="bg-blue-400 dark:bg-gray-800 border-b border-blue-200 dark:border-gray-700">
+            <nav x-data="{ open: false }" class="bg-green-400 dark:bg-gray-800 border-b border-green-200 dark:border-gray-700">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
                         <div class="flex">
