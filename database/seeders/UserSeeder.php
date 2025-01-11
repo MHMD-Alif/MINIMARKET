@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'password' => 'password',
         ])->assignRole('owner');
         User::factory()->create([
-            'name' => 'Dimas',
+            'name' => 'Anton',
             'email' => 'manager@gmail.com',
             'username' => 'manager',
             'password' => 'password',
@@ -28,24 +28,24 @@ class UserSeeder extends Seeder
         ])->assignRole('manager');
         User::factory()->create([
             'name' => 'Andre',
-            'email' => 'inventory@gmail.com',
-            'username' => 'inventory',
-            'password' => 'password',
-            'store_id' => 1,
-        ])->assignRole('inventory');
-        User::factory()->create([
-            'name' => 'Tono',
             'email' => 'cashier@gmail.com',
             'username' => 'cashier',
             'password' => 'password',
             'store_id' => 1,
         ])->assignRole('cashier');
         User::factory()->create([
-            'name' => 'Anton',
-            'email' => 'cashier2@gmail.com',
-            'username' => 'cashier2',
+            'name' => 'Tono',
+            'email' => 'inventory@gmail.com',
+            'username' => 'inventory',
+            'password' => 'password',
+            'store_id' => 1,
+        ])->assignRole('inventory');
+        User::factory()->create([
+            'name' => 'Dimas',
+            'email' => 'inventory2@gmail.com',
+            'username' => 'inventory2',
             'password' => 'password',
             'store_id' => 2,
-        ])->assignRole('cashier');
+        ])->assignRole('inventory');
     }
 }
